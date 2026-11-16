@@ -1,0 +1,21 @@
+[package]
+name = "coordinator"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+protocol.workspace = true
+anyhow.workspace = true
+clap.workspace = true
+ed25519-dalek.workspace = true
+getrandom.workspace = true
+hex.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+uuid.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+reqwest.workspace = true
+axum = "0.8"
+tokio = { version = "1", features = ["full"] }
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }

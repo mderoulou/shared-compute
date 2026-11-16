@@ -1,0 +1,10 @@
+[package]
+name = "worker"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+protocol.workspace = true
+anyhow.workspace = true
+bincode.workspace = true
+ort = { version = "=2.0.0-rc.15", features = ["directml"] }
